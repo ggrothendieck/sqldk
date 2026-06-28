@@ -1,0 +1,17 @@
+Package: sqldk
+Version: 0.1
+Date: 2024-05-25
+Title: Manipulate R Data Frames using duckdb SQL
+Author: G. Grothendieck <ggrothendieck@gmail.com>
+Maintainer: G. Grothendieck <ggrothendieck@gmail.com>
+Description: Process one or more SQL statements with duckdb against data frames
+  in workspace. Similar in purpose to sqldf package but with duckdb database.
+ByteCompile: true
+Depends: DBI, duckdb
+License: GPL-2
+BugReports: https://github.com/ggrothendieck/sqldk/issues
+URL: https://github.com/ggrothendieck/sqldk, https://duckdb.org/docs
+NeedsCompilation: no
+Encoding: UTF-8
+RoxygenNote: 7.3.3
+Packaged: 2024-05-26 19:59:42 UTC; Louis

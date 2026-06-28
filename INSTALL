@@ -1,0 +1,17 @@
+To install first go to https://github.com/ggrothendieck/sqldk
+and click on commits at the right of the grey bar above the file tree.
+If the top commit says Verified then it has been digitally signed.  This 
+is not foolproof but it does give one layer of security.
+
+Next issue this command from R to install sqldk and its dependencies:
+
+  library(remotes)
+  install_github("ggrothendieck/sqkdk")
+
+To now access the package 
+
+  library(sqldk)
+  sqldk("select * from mtcars limit 3") # sample run
+
+See the README file for more information.
+
