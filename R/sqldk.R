@@ -4,12 +4,11 @@
 # TODO: vignette
 # TODO: register= heuristic
 # TODO: packaging
-# TODO: CRAN prep
 
 # extract all occcurrences of pat
 # @param x character vector
 # @param pat regular expression
-# @param if TRUE (default) unlist, remove duplicates and sort
+# @param simplify if TRUE (default) unlist, remove duplicates and sort
 # @return char vec of matches (or list of char vecs if simplify is FALSE)
 extract_pat <- function(x, pat = "[[:alnum:]._]+", simplify = TRUE) {
   m <- gregexec(pat, x)
@@ -78,7 +77,9 @@ disconn <- function(con, names, verbose) {
 #'  then if db is a previously opened duckdb connection object then close it 
 #'  and if not then open a new connection and return it.)
 #' Commonly x is specified and all other arguments are left at default.
-#' See \url{https://cran.r-project.org/web/packages/sqldk/README} for more info.
+#' @seealso
+#' \url{https://raw.githubusercontent.com/ggrothendieck/sqldk/refs/heads/main/README} 
+#' \url{https://raw.githubusercontent.com/ggrothendieck/sqldk/refs/heads/main/INSTALL}
 #' @examples
 #' sqldk("select * from iris limit 3")
 #' @export

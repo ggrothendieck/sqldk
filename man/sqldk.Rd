@@ -25,11 +25,14 @@ Result of last sql statement in x. (If no sql statement specified
  then if db is a previously opened duckdb connection object then close it 
  and if not then open a new connection and return it.)
 Commonly x is specified and all other arguments are left at default.
-See \url{https://cran.r-project.org/web/packages/sqldk/README} for more info.
 }
 \description{
 Run duckdb SQL statement(s) against R data frames.
 }
 \examples{
 sqldk("select * from iris limit 3")
+}
+\seealso{
+\url{https://raw.githubusercontent.com/ggrothendieck/sqldk/refs/heads/main/README} 
+\url{https://raw.githubusercontent.com/ggrothendieck/sqldk/refs/heads/main/INSTALL}
 }
